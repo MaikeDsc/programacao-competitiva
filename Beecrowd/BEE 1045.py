@@ -26,7 +26,7 @@ else:
         if a == b == c:
             print('TRIANGULO EQUILATERO')
 
-        elif (a == b) or (a == c) or (b == c):
+        elif (a == b) or (a == c) or (b == c): 
             print('TRIANGULO ISOSCELES') 
 
     elif (a**2) < ((b**2) + (c**2)):
