@@ -1,8 +1,5 @@
-casos = int(input())
+n = int(input())
 
-trilhas = [list(map(int, input().split())) for c in range(casos)]
-
-for i in range(casos):
+for c in range(n):
+    trilhas = list(map(int, input().split()))
     
-print(trilhas)
- 

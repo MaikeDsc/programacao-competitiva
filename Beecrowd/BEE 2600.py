@@ -1,16 +1,27 @@
 n = int(input())
 
 for c in range(n):
-    top = int(input())
-
-    others = list(map(int, input().split()))
-    base = int(input())
-
+    n1 = int(input())
+    n2,n3,n4,n5 = map(int, input().split())
+    n6 = int(input())
+    v1 = [n1, n2, n3,n6,n4,n5]
     
-    if top + base == 7 and (0 <top<7) and (0 <base<7):
-        if ((others[0] + others[2] == 7) and (0<others[0]<7) and (0<others[2]<7) ) and ((others[1] + others[3] == 7) and (0<others[1]<7) and (0<others[3]<7)):
+
+    if (min(v1)<1 or 6 < max(v1)) :
+        print('NAO')
+    
+    else:
+        cont = 0
+        for c in range(3):
+            if v1.count(v1[c]) > 1: 
+                break 
+
+            elif v1[c] + v1[c+3] == 7:
+                cont += 1
+            else: 
+                break
+        if cont == 3:
             print('SIM')
         else:
             print('NAO')
-    else:
-        print('NAO') 
+
