@@ -10,9 +10,3 @@ for c in range(n-1):
 
 print(segundos[-1] + 10 - segundos[0] - intervalos)
     
-5
-5
-10
-17
-20
-30
