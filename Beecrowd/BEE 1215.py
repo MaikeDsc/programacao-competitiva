@@ -1,4 +1,5 @@
 #primeiro discionário  de Andy
+#ainda farei com ascii 
 
 alfabeto = 'abcdefghijklmnopqrstuvwxyz'
 
